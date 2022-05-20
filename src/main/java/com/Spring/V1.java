@@ -18,7 +18,6 @@ public class V1 {
 //        System.out.println(student == student1);
 //        System.out.println(student.equals(student1));
         context.close();
-
 //        depends-on="card"
         //表示card先初始化
     }
