@@ -34,7 +34,7 @@ public class Student {
 //        System.out.println("我是初始化方法");
 //    }
 //
-//    public Student_AOP(){
+//    public Student(){
 //        System.out.println("我是Student");
 //    }
     public Student(String name,int age){

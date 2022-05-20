@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
             https://www.springframework.org/schema/beans/spring-beans.xsd">
-<!--    <bean name="student" class="Student_AOP" init-method="init" destroy-method="destory"/>-->
+<!--    <bean name="student" class="Student" init-method="init" destroy-method="destory"/>-->
     <bean name="student" class="com.IOC.bean.Student" autowire="byName">
 <!--        <constructor-arg type="java.lang.String" value="小明"/>-->
 <!--        <constructor-arg value="小明" index="0"/>-->
