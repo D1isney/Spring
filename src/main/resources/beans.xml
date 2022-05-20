@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            https://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean name="student" class="Student" init-method="init" destroy-method="destory"/>-->
+    <bean name="student" class="com.Spring.bean.Student" depends-on="card">
+        <property name="name" value="小明"/>
+        <property name="age" value="23"/>
+        <property name="card" ref="card"/>
+        <property name="list">
+            <list>
+                <value type="double">100.0d</value>
+                <value type="int">100</value>
+                <value type="float">123.2f</value>
+            </list>
+        </property>
+
+    </bean>
+
+    <bean name="card" class="com.Spring.bean.Card" />
+</beans>
