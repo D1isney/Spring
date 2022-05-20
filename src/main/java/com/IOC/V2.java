@@ -1,6 +1,6 @@
-package com.Spring;
+package com.IOC;
 
-import com.Spring.bean.Student;
+import com.IOC.bean.Student;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class V2 {
