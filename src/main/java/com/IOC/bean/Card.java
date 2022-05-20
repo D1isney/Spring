@@ -1,4 +1,4 @@
-package com.Spring.bean;
+package com.IOC.bean;
 
 public class Card {
     public Card(){

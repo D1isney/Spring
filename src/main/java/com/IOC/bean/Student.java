@@ -1,9 +1,6 @@
-package com.Spring.bean;
+package com.IOC.bean;
 
 import lombok.ToString;
-
-import java.util.List;
-import java.util.Map;
 
 @ToString
 public class Student {
