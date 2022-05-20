@@ -17,6 +17,7 @@ public class V1 {
         // 可以个beans.xml上面更改模式（原型模式）scope="prototype"
 //        System.out.println(student == student1);
 //        System.out.println(student.equals(student1));
+        
         context.close();
 //        depends-on="card"
         //表示card先初始化
