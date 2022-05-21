@@ -26,6 +26,7 @@
 <!--                <entry key="数学" value="100"></entry>-->
 <!--            </map>-->
 <!--        </property>-->
+
     </bean>
     <bean name="card" class="com.IOC.bean.Card" />
 </beans>
