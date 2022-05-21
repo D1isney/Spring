@@ -14,7 +14,12 @@ public class Student_AOP {
         System.out.println("我是过时方法");
     }
 
-    public void say(String name){
-        System.out.println("我叫"+name+",今年"+age+"岁了"+name);
+//    public void say(String name){
+//        System.out.println("我叫"+name+",今年"+age+"岁了"+name);
+//    }
+
+    public String say(String text){
+        System.out.println("我叫"+name+",今年"+age+"岁了");
+        return text;
     }
 }
