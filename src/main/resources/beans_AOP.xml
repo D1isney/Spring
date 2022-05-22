@@ -41,7 +41,7 @@
 <!--        </aop:aspect>-->
 
 <!--        <aop:aspect ref="aoptext">-->
-<!--            <aop:pointcut id="test" expression="@annotation(Deprecated)"/>-->
+<!--            <aop:pointcut id="test" expression="@spring_annotation(Deprecated)"/>-->
 <!--            <aop:before method="before" pointcut-ref="test" />-->
 <!--        </aop:aspect>-->
 
