@@ -15,8 +15,10 @@
         <constructor-arg name="age" value="12" />
     </bean>
     <bean name="aoptext" class="com.AOP.C.AopText">
-
     </bean>
+
+    <bean name="methodBefore" class="com.AOP.C.MethodBefore" />
+    <bean name="methodAfter" class="com.AOP.C.afterReturn"/>
 
 <!--    定义切点-->
     <aop:config>
@@ -43,10 +45,19 @@
 <!--            <aop:before method="before" pointcut-ref="test" />-->
 <!--        </aop:aspect>-->
 
-        <aop:aspect ref="aoptext">
-            <aop:pointcut id="aroud" expression="execution(* com.AOP.C.Student_AOP.say(String))"/>
-            <aop:around method="around" pointcut-ref="aroud"></aop:around>
-        </aop:aspect>
+<!--        <aop:aspect ref="aoptext">-->
+<!--            <aop:pointcut id="aroud" expression="execution(* com.AOP.C.Student_AOP.say(String))"/>-->
+<!--            <aop:around method="around" pointcut-ref="aroud"></aop:around>-->
+<!--        </aop:aspect>-->
+
+<!--            接口实现AOP-->
+<!--            <aop:pointcut id="stu" expression="execution(* com.AOP.C.Student_AOP.say(String))" />-->
+<!--&lt;!&ndash;        相当于一个通知器&ndash;&gt;-->
+<!--            <aop:advisor advice-ref="methodBefore" pointcut-ref="stu" />-->
+
+            <aop:pointcut id="stu1" expression="execution(* com.AOP.C.Student_AOP.say(String))" />
+            <!--        相当于一个通知器-->
+            <aop:advisor advice-ref="methodAfter" pointcut-ref="stu1" />
 
     </aop:config>
 </beans>
