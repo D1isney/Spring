@@ -19,7 +19,7 @@ import spring_annotation.bean.annotation_student;
 //配置类 ————》当作xml
 //@Configuration
 
-//导入
+//导入  强制注册为Bean
 @Import(TestConfiguration.class)
 public class MainConfiguration {
 

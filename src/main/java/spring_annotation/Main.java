@@ -3,8 +3,11 @@ package spring_annotation;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import spring_annotation.bean.Card;
+import spring_annotation.bean.Teacher;
 import spring_annotation.bean.annotation_student;
 import spring_annotation.config.MainConfiguration;
+
+import java.util.Date;
 
 //注解实现AOP
 public class Main {
@@ -18,5 +21,10 @@ public class Main {
 
         annotation_student annotation_student1 = context.getBean(spring_annotation.bean.annotation_student.class);
         System.out.println(annotation_student1.say("执行了方法"));
+
+        //通过import可以加载别的配置类
+        Teacher teacher = context.getBean(Teacher.class);
+        System.out.println(teacher);
+
     }
 }
