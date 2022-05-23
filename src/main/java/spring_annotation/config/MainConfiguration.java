@@ -1,5 +1,6 @@
 package spring_annotation.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -24,12 +25,21 @@ public class MainConfiguration {
     public Card card(){
         return new Card();
     }
+//
+//    @Bean
+//    public annotation_student annotation_student(@Autowired Card card){
+//        annotation_student annotation_student = new annotation_student();
+//
+//        //参数的形式注入
+//        annotation_student.setCard(card);
+//
+////        annotation_student.setName("小明");
+//        return annotation_student;
+//    }
 
     @Bean
     public annotation_student annotation_student(){
-        annotation_student annotation_student = new annotation_student();
-        annotation_student.setName("小明");
-        return annotation_student;
+        return new annotation_student();
     }
 
 }

@@ -18,4 +18,14 @@ public class annotation_student {
     public void setCard(Card card) {
         this.card = card;
     }
+
+    public void init(){
+        System.out.println("属性Card为："+card);
+    }
+
+    public String say(String text){
+        System.out.println("我叫"+name+"今年"+age+"岁了");
+        return text;
+    }
+
 }

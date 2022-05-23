@@ -13,10 +13,11 @@ public class Main {
 //        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext();
         //注解实现
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfiguration.class);
-        Card card = context.getBean(Card.class);
-        System.out.println(card);
+//        Card card = context.getBean(Card.class);
+//        System.out.println(card);
 
         annotation_student annotation_student = context.getBean(spring_annotation.bean.annotation_student.class);
-        System.out.println(annotation_student);
+        annotation_student.say("123");
+        System.out.println(annotation_student.say("张三"));
     }
 }
