@@ -16,8 +16,7 @@ public class Main {
 //        Card card = context.getBean(Card.class);
 //        System.out.println(card);
 
-        annotation_student annotation_student = context.getBean(spring_annotation.bean.annotation_student.class);
-        annotation_student.say("123");
-        System.out.println(annotation_student.say("张三"));
+        annotation_student annotation_student1 = context.getBean(spring_annotation.bean.annotation_student.class);
+        System.out.println(annotation_student1.say("执行了方法"));
     }
 }
