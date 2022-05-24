@@ -1,5 +1,6 @@
 package spring_mybatis.config;
 
+import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.io.Resources;
@@ -31,16 +32,27 @@ public class MainConfiguration {
 //        return sqlSessionTemplate;
 //    }
 
-    //创建一个数据源的实现类
-    @Bean
-    public DataSource dataSource(){
-        PooledDataSource dataSource = new PooledDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/test");
-        dataSource.setDriver("com.mysql.cj.jdbc.Driver");
+//    //创建一个数据源的实现类
+//    @Bean
+//    public DataSource dataSource(){
+//        PooledDataSource dataSource = new PooledDataSource();
+//        dataSource.setUrl("jdbc:mysql://localhost:3306/test");
+//        dataSource.setDriver("com.mysql.cj.jdbc.Driver");
+//        dataSource.setUsername("root");
+//        dataSource.setPassword("Fengxi1217.00");
+//        return dataSource;
+//    }
+
+    //创建一个数据源（这个会比较快）
+        public DataSource dataSource(){
+        HikariDataSource dataSource = new HikariDataSource();
+        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/test");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUsername("root");
         dataSource.setPassword("Fengxi1217.00");
         return dataSource;
     }
+
 
     public SqlSessionFactoryBean sqlSessionFactoryBean(@Autowired DataSource source){
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
