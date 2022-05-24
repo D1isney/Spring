@@ -6,6 +6,6 @@ import spring_mybatis.bean.Student_mybatis;
 
 @Mapper
 public interface TestMapper {
-    @Select("select * from student where sid ='1'")
+    @Select("select * from student where id ='1'")
     Student_mybatis getStudent_mybatis();
 }
