@@ -6,16 +6,16 @@ import org.springframework.stereotype.Component;
 import spring_mybatis.bean.Student_mybatis;
 import spring_mybatis.mapper.TestMapper;
 
+import javax.annotation.Resource;
+
 @Component
 public class TestServiceImpl implements TestService{
 
-    @Autowired
-    SqlSessionTemplate sqlSessionTemplate;
-
+    @Resource
+    TestMapper mapper;
 
     @Override
     public Student_mybatis getStudent() {
-        TestMapper testMapper = sqlSessionTemplate.getMapper(TestMapper.class);
-        return testMapper.getStudent_mybatis();
+        return mapper.getStudent_mybatis();
     }
 }
