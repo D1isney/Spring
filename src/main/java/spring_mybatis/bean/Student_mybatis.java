@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @Data
 public class Student_mybatis {
-    int id;
+    int sid;
     String name;
-    int age;
+    String sex;
 }
