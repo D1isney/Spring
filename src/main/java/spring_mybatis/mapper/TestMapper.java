@@ -1,6 +1,5 @@
 package spring_mybatis.mapper;
 
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import spring_mybatis.bean.Student_mybatis;
@@ -9,8 +8,4 @@ import spring_mybatis.bean.Student_mybatis;
 public interface TestMapper {
     @Select("select * from student where sid ='1'")
     Student_mybatis getStudent_mybatis();
-
-    @Insert("insert into student(name,sex) values('测试','男')")
-    public void insertStudent();
-
 }

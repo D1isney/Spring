@@ -14,7 +14,8 @@
             </dataSource>
         </environment>
     </environments>
-<!--    <mappers>-->
-<!--        <mapper class = "spring_mybatis.TestMapper" />-->
-<!--    </mappers>-->
+    <mappers>
+        <mapper class="spring_mybatis.TestMapper" />
+    </mappers>
+
 </configuration>
