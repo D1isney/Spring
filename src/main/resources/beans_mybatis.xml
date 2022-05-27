@@ -2,20 +2,22 @@
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
-<configuration>
-    <environments default="development">
-        <environment id="development">
-            <transactionManager type="JDBC" />
-            <dataSource type="UNPOOLED">
-                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/study"/>
-                <property name="username" value="root"/>
-                <property name="password" value="Fengxi1217.00"/>
-            </dataSource>
-        </environment>
-    </environments>
-    <mappers>
-        <mapper class="spring_mybatis.TestMapper" />
-    </mappers>
+<!--<configuration>-->
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC" />-->
+<!--            <dataSource type="UNPOOLED">-->
+<!--                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/study"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="Fengxi1217.00"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+<!--&lt;!&ndash;    <mappers>&ndash;&gt;-->
+<!--&lt;!&ndash;        <mapper class="spring_mybatis.TestMapper" />&ndash;&gt;-->
+<!--&lt;!&ndash;    </mappers>&ndash;&gt;-->
+
+<!--</configuration>--><configuration>
 
 </configuration>

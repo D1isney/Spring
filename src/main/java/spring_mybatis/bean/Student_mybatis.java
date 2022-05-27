@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Data
+@Component
 public class Student_mybatis {
     int sid;
     String name;
